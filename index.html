@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The viewport meta tag is important for responsive pages</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,13 +21,13 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="header">
+    <!--<header class="header">
       <div class="container main-nav">
         <nav class="site-nav">
           <a href="./index.html" class="logotype"
             >Web<span class="studio-header">Studio</span></a
           >
-          <ul class="site-nav">
+           <ul class="site-nav">
             <li class="studio-item item">
               <a class="link current" href="./index.html">Studio</a>
             </li>
@@ -49,20 +51,27 @@
             </li>
           </ul>
         </address>
+        <button class="header-burger" type="button">
+          <svg class="icon-burgerbtn" width="30" height="19" aria-label="menu button">
+            <use
+            href="./images/icons.svg/symbol-defs.svg#icon-menu">
+            </use>
+          </svg>
+        </button>
       </div>
     </header>
-    <main>
-      <!--HERO-->
-      <section class="overlay">
+    <main>-->
+    <!--HERO-->
+    <!--<section class="overlay">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button data-modal-open class="button primary" type="button">
             Order Service
           </button>
         </div>
-      </section>
-      <!--GOALS-->
-      <section class="section-goals">
+      </section>-->
+    <!--GOALS-->
+    <!--<section class="section-goals">
         <div class="container">
           <h2 class="visually-hidden">Goals</h2>
           <ul class="goals-ul">
@@ -124,9 +133,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--GOALS ILLUSTRATIONS-->
-      <section class="section">
+      </section>-->
+    <!--GOALS ILLUSTRATIONS-->
+    <!--<section class="section">
         <div class="container">
           <h2 class="subtitle">What are we doing</h2>
           <ul class="goals-illustrations">
@@ -156,9 +165,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--TEAM PHOTO-->
-      <section class="section teamphotoes-bgr">
+      </section>-->
+    <!--TEAM PHOTO-->
+    <!--<section class="section teamphotoes-bgr">
         <div class="container">
           <h2 class="subtitle">Our Team</h2>
           <ul class="team-photoes">
@@ -452,9 +461,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--CUSTOMERS-->
-      <section class="section">
+      </section>-->
+    <!--CUSTOMERS-->
+    <!--<section class="section">
         <div class="container">
           <h2 class="subtitle">Customers</h2>
           <ul class="customers-list">
@@ -545,9 +554,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main>-->
     <!--FOOTER-->
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container-footer">
         <div>
           <a href="./index.html" class="logotype link"
@@ -648,8 +657,9 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer>-->
+    <!--MODAL-->
+    <!--<div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
           data-modal-close
@@ -725,6 +735,110 @@
             <button class="button send-button" type="submit">Send</button>
           </form>
         </div>
+      </div>
+    </div>-->
+
+    <!--MOBILE-MENU-->
+    <div class="container-mobile-menu mobile-menu">
+      <button
+        data-modal-close
+        type="button"
+        class="modal-button js-close-menu"
+        aria-label="closing button"
+        rel="noopener noreferer"
+      >
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="menu">
+        <ul class="menu-items">
+          <li class="item-menu">
+            <a class="link" href="./index.html">Studio</a>
+          </li>
+          <li class="item-menu">
+            <a class="link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="item-menu">
+            <a class="link current" href="./index.html">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-contacts">
+        <ul class="contacts-items">
+          <li>
+            <a href="tel:+110001111111" class="tel link tel-number"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="email link menu-emai"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-social-list">
+          <li>
+            <a
+              href=""
+              class="social-list-link"
+              aria-label="link for instagram"
+              rel="noopener noreferer"
+              target="_blank"
+            >
+              <svg class="social-list-icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="social-list-link"
+              aria-label="link for twitter"
+              rel="noopener noreferer"
+              target="_blank"
+            >
+              <svg width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="social-list-link"
+              aria-label="link for facebook"
+              rel="noopener noreferer"
+              target="_blank"
+            >
+              <svg class="social-list-icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-facebook"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="social-list-link"
+              aria-label="link for linkedin"
+              rel="noopener noreferer"
+              target="_blank"
+            >
+              <svg class="social-list-icon" width="24" height="24">
+                <use
+                  href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
+                ></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>
