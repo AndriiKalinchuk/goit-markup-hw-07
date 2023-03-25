@@ -425,6 +425,7 @@ ul.site-nav {
 }
 
 .container-footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 72px;
@@ -500,6 +501,7 @@ ul.site-nav {
 }
 
 .button.subscribe {
+  width: 100%;
   padding: 8px 24px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-color);
@@ -519,7 +521,7 @@ ul.site-nav {
 }
 
 .footer-input {
-  width: 290px;
+  width: 100%;
   height: 40px;
   border: 1px solid var(--white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -881,23 +883,28 @@ ul.site-nav {
 
 /*--------MOBILE-MENU==========*/
 
-.container-mobile-menu {
-  width: 100vw;
-  margin: 0 auto;
-  padding: 80px 35px 40px 40px;
-  background-color: var(--white-color);
-}
-
 .mobile-menu {
+  width: 100vw;
   position: fixed;
   top: 0;
   right: 0;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  overflow: auto;
+
+  background-color: var(--white-color);
+  transform: translateX(100%);
+  transition: transform var(--transition-time) var(--cubic);
+}
+
+.container-mobile-menu {
+  margin: 0 auto;
+  padding-right: 35px;
+  padding-left: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 72p;
-  transform: translateX(100%);
-  transition: transform var(--transition-time) var(--cubic);
+  gap: 72px;
 }
 
 .mobile-menu.is-open {
@@ -910,7 +917,7 @@ ul.site-nav {
   gap: 40px;
 }
 
-.menu .link {
+.item-menu {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(40 / 36);
@@ -918,25 +925,19 @@ ul.site-nav {
   transition: color var(--transition-time) var(--cubic);
 }
 
-.item-menu .current {
+.item-menu.current {
   color: var(--pressed-state-color);
 }
 
-.menu .link:hover,
-.menu .link:focus {
+.item-menu:hover,
+.item-menu:focus {
   color: var(--pressed-state-color);
 }
 
 .menu-contacts {
   display: flex;
   flex-direction: column;
-  gap: 48px;
-}
-
-.contacts-items {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  gap: 0;
 }
 
 .tel-number {
@@ -944,13 +945,15 @@ ul.site-nav {
   font-size: 36px;
   line-height: calc(40 / 36);
   margin-bottom: 40px;
+  color: var(--primary-brand-color);
   transition: color var(--transition-time) var(--cubic);
 }
 
 .menu-emai {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: calc(24 / 20);
+  padding: 0;
   color: var(--text-color);
   transition: color var(--transition-time) var(--cubic);
 }
@@ -967,6 +970,13 @@ ul.site-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 56px;
+  margin-right: 25px;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--pressed-state-color);
 }
 
 /*breakpoints 480px, 768px і 1200px.*/
