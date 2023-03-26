@@ -1306,13 +1306,13 @@ ul.site-nav {
 .menu-contacts {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 .tel-number {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(40 / 36);
-  margin-bottom: 40px;
   color: var(--primary-brand-color);
   transition: color var(--transition-time) var(--cubic);
 }
@@ -1321,7 +1321,7 @@ ul.site-nav {
   font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
-  padding: 0;
+  margin-bottom: 8px;
   color: var(--text-color);
   transition: color var(--transition-time) var(--cubic);
 }
@@ -1338,12 +1338,27 @@ ul.site-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 56px;
-  margin-right: 25px;
   background-color: var(--white-color);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.menu-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: var(--primary-brand-color);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color var(--transition-time) var(--cubic);
+}
+
+.menu-social-icon {
+  fill: currentColor;
+}
+.menu-social-link:hover,
+.menu-social-link:focus {
   background-color: var(--pressed-state-color);
 }
