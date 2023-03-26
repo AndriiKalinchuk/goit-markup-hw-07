@@ -223,14 +223,10 @@ ul.site-nav {
   }
 }
 
-.menu-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.menu-contacts .link {
+.contacts .link {
+  font-style: normal;
   color: var(--text-color);
+
   transition: color var(--transition-time) var(--cubic);
 }
 
@@ -1190,8 +1186,6 @@ ul.site-nav {
   right: 0;
   padding-top: 80px;
   padding-bottom: 40px;
-  overflow: auto;
-
   background-color: var(--white-color);
   transform: translateX(100%);
   transition: transform var(--transition-time) var(--cubic);
@@ -1206,6 +1200,7 @@ ul.site-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--white-color);
 }
 
 .mobile-menu.is-open {
@@ -1238,7 +1233,6 @@ ul.site-nav {
 .menu-contacts {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .tel-number {
@@ -1273,6 +1267,7 @@ ul.site-nav {
   justify-content: space-between;
   margin-top: 56px;
   margin-right: 25px;
+  background-color: var(--white-color);
 }
 
 .social-list-link:hover,
